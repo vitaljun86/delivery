@@ -6,7 +6,7 @@ def delivery(data: list[int], limit: int) -> int:
     while left <= right:
         if left == right:
             count_platforms += 1
-            break #return 1
+            break
         if data[left] + data[right] <= limit:
             left += 1
             right -= 1
