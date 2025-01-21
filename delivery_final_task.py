@@ -4,9 +4,7 @@ def delivery(data: list[int], limit: int) -> int:
     left, right = 0, len(data) - 1
     count_platforms = 0
     while left <= right:
-        if left == right:
-            count_platforms += 1
-            break
+
         if data[left] + data[right] <= limit:
             left += 1
             right -= 1
