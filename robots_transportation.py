@@ -1,16 +1,13 @@
 def delivery(data: list[int], limit: int) -> int:
-    """Функция находит минимальное количество платформ  id_132025136"""
+    """Функция находит минимальное количество платформ  id_132081924"""
     data.sort()
     left, right = 0, len(data) - 1
     count_platforms = 0
     while left <= right:
+        count_platforms += 1
         if data[left] + data[right] <= limit:
             left += 1
-            right -= 1
-            count_platforms += 1
-        else:
-            right -= 1
-            count_platforms += 1
+        right -= 1
     return count_platforms
 
 
