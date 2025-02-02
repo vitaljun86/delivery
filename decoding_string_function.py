@@ -1,4 +1,5 @@
 def get_decoding_string(encrypted_string: str) -> str:
+    """Функция выполняет расшифровку зашифрованной строки id-132700773"""
     current_number = 0
     current_string = ''
     stack_result = []
